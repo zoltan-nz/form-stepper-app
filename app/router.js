@@ -7,6 +7,12 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('form', function() {
+    this.route('details');
+    this.route('last-question');
+    this.route('confirm');
+    this.route('done');
+  });
 });
 
 export default Router;
