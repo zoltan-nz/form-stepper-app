@@ -1,3 +1,7 @@
-<h2>{{outlet "title"}}</h2>
+<h2>{{model.activeStep.label}}</h2>
+
+{{#each model as |step|}}
+  {{link-to step.label step.route}}
+{{/each}}
 
 {{outlet}}
